@@ -19,7 +19,7 @@ entry(
              Tmin = (300, 'K'),
              Tmax = (3000, 'K')),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 1""",
+    longDesc = u"""Konnov (2019) 10.1016/j.combustflame.2019.01.032, Table 1, Reaction 1""",
 )
 
 entry(
@@ -32,7 +32,8 @@ entry(
              Tmin = (300, 'K'),
              Tmax = (3000, 'K')),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 2""",
+    longDesc = u"""Konnov (2019) https://doi.org/10.1016/j.combustflame.2019.01.032
+			Table 1, Reaction 2""",
 )
 
 entry(
@@ -45,7 +46,8 @@ entry(
              Tmin = (300, 'K'),
              Tmax = (3000, 'K')),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 3""",
+    longDesc = u"""Konnov (2019) https://doi.org/10.1016/j.combustflame.2019.01.032
+			Table 1, Reaction 3""",
 )
 
 entry(
@@ -58,7 +60,8 @@ entry(
              Tmin = (300, 'K'), 
              Tmax = (3000, 'K')),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 4""",
+    longDesc = u"""Konnov (2019) https://doi.org/10.1016/j.combustflame.2019.01.032
+			Table 1, Reaction 4""",
 )
 
 entry(
@@ -72,7 +75,8 @@ entry(
              Tmin=(200, 'K'),
              Tmax=(2000, 'K')),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 5""",
+    longDesc = u"""Konnov (2019) https://doi.org/10.1016/j.combustflame.2019.01.032
+			Table 1, Reaction 5""",
 )
 
 entry(
@@ -97,7 +101,8 @@ entry(
         efficiencies = {'[H][H]': 1.5, 'O=C=O': 3.61, '[He]': 0.57, '[Ar]': 0.72, 'O': 16.6},
         comment = 'The value of T3 was calculated with the first factor of the Lindemann model and an Fcent value of 0.5 specified in the Konnov 2019 paper.'),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 6""",
+    longDesc = u"""Konnov (2019) https://doi.org/10.1016/j.combustflame.2019.01.032
+			Table 1, Reaction 6""",
 )
 
 entry(
@@ -110,7 +115,8 @@ entry(
              Tmin = (200, 'K'),
              Tmax = (2500, 'K')),
     shortDesc = u"""[Konnov2019]""",
-    longDesc = u"""Table 1, Reaction 7""",
+    longDesc = u"""Konnov (2019) https://doi.org/10.1016/j.combustflame.2019.01.032
+			Table 1, Reaction 7""",
 )
 
 entry(
@@ -118,41 +124,65 @@ entry(
     label = "H + H <=> H2",
     degeneracy = 1.0,
     kinetics = ThirdBody(
-        arrheniusLow=Arrhenius(A=(7e+17, 'cm^6/(mol^2*s)', '*|/', 2), n=-1.0, Ea=(0, 'cal/mol'), T0=(1, 'K'),
-                               Tmin=(77, 'K'), Tmax=(5000, 'K')),
-            efficiencies={'N#N': 0.0, '[H]': 0.0, '[H][H]': 0.0, 'O': 14.3}),
+        arrheniusLow=Arrhenius(
+             A=(7e+17, 'cm^6/(mol^2*s)', '*|/', 2), 
+             n=-1.0, 
+             Ea=(0, 'cal/mol'), 
+             T0=(1, 'K'),
+             Tmin=(77, 'K'), 
+             Tmax=(5000, 'K')),
+             efficiencies={'N#N': 0.0, '[H]': 0.0, '[H][H]': 0.0, 'O': 14.3}),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 1a""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 1a""",
 )
 
 entry(
     index = 9,
     label = "H + H + H2 <=> H2 + H2",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(1e+17, 'cm^6/(mol^2*s)', '*|/', 2.5), n=-0.6, Ea=(0, 'cal/mol'), T0=(1, 'K'),
-                         Tmin=(50, 'K'), Tmax=(5000, 'K')),
+    kinetics = Arrhenius(
+    	     A=(1e+17, 'cm^6/(mol^2*s)', '*|/', 2.5), 
+    	     n=-0.6, 
+    	     Ea=(0, 'cal/mol'), 
+    	     T0=(1, 'K'),
+             Tmin=(50, 'K'), 
+             Tmax=(5000, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 1b""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 1b""",
 )
 
 entry(
     index = 10,
     label = "H + H + N2 <=> H2 + N2",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(5.4e+18, 'cm^6/(mol^2*s)', '*|/', 3.2), n=-1.3, Ea=(0, 'cal/mol'), T0=(1, 'K'),
-                         Tmin=(77, 'K'), Tmax=(2000, 'K')),
+    kinetics = Arrhenius(
+    	     A=(5.4e+18, 'cm^6/(mol^2*s)', '*|/', 3.2), 
+    	     n=-1.3, 
+    	     Ea=(0, 'cal/mol'), 
+    	     T0=(1, 'K'),
+             Tmin=(77, 'K'), 
+             Tmax=(2000, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 1c""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 1c""",
 )
 
 entry(
     index = 11,
     label = "H + H + H <=> H2 + H",
     degeneracy = 1.0,
-    kinetics = Arrhenius(A=(3.2e+15, 'cm^6/(mol^2*s)', '*|/', 3.2), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K'),
-                         Tmin=(50, 'K'), Tmax=(5000, 'K')),
+    kinetics = Arrhenius(
+    	     A=(3.2e+15, 'cm^6/(mol^2*s)', '*|/', 3.2), 
+    	     n=0, 
+    	     Ea=(0, 'cal/mol'), 
+    	     T0=(1, 'K'),
+             Tmin=(50, 'K'), 
+             Tmax=(5000, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 1d""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 1d""",
 )
 
 entry(
@@ -167,7 +197,8 @@ entry(
             T0=(1, 'K')),
         efficiencies={'N#N': 2.0, 'O': 5.0, '[O-][O+]=O': 8.0, '[O]': 28.8, '[O][O]': 8.0}),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 2""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 2""",
 )
 
 entry(
@@ -183,7 +214,8 @@ entry(
         efficiencies={'O': 5.0},
         comment="""NO/2.0/ N/2.0/"""),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 3""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 3""",
 )
 
 entry(
@@ -198,7 +230,8 @@ entry(
             T0=(1, 'K')),
         efficiencies={'N#N': 2.0, 'O': 0.0, '[H][H]': 3.0, '[He]': 1.1, '[O][O]': 1.5}),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 4a""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 4a""",
 )
 
 entry(
@@ -212,7 +245,8 @@ entry(
         T0=(1, 'K'),
         comment="""CH4/7/ CO2 /4/"""),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 4b""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 4b""",
 )
 
 entry(
@@ -223,7 +257,8 @@ entry(
                     arrheniusLow=Arrhenius(A=(4.57e+18, 'cm^6/(mol^2*s)'), n=-1.12, Ea=(0, 'cal/mol'), T0=(1, 'K')),
                     alpha=0.5, T3=(1, 'K'), T1=(1e+10, 'K'), efficiencies={}, comment="""CO2/2.4/ CH4/3.5/"""),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 5a""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 5a""",
 )
 
 entry(
@@ -245,7 +280,8 @@ entry(
         T1=(1e+10, 'K'),
         efficiencies={}),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 5c""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 5c""",
 )
 
 entry(
@@ -258,7 +294,8 @@ entry(
         alpha=0.8, T3=(1, 'K'), T1=(1e+10, 'K'),
         efficiencies={}),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 5d""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 5d""",
 )
 
 entry(
@@ -281,7 +318,8 @@ entry(
         T1=(1e+10, 'K'),
         efficiencies={'N#N': 1.5, 'O': 7.5, 'OO': 7.7, '[H][H]': 3.7, '[He]': 0.65, '[O][O]': 1.2}),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 6""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 6""",
 )
 
 entry(
@@ -295,7 +333,8 @@ entry(
         T0=(1, 'K'),
         comment="""CO2/1.6/ CO/2.8/"""),
         shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 7""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 7""",
 )
 
 entry(
@@ -308,7 +347,8 @@ entry(
         Ea=(15286, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 8""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 8""",
 )
 
 entry(
@@ -321,7 +361,8 @@ entry(
         Ea=(3450, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 9""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 9""",
 )
 
 entry(
@@ -334,7 +375,8 @@ entry(
         Ea=(-723.9, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 11""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 11""",
 )
 
 entry(
@@ -347,7 +389,8 @@ entry(
         Ea=(300, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 12""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 12""",
 )
 
 entry(
@@ -360,7 +403,8 @@ entry(
         Ea=(61600, 'cal/mol'),
         T0=(1, 'K')),
         shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 13""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 13""",
 )
 
 entry(
@@ -373,7 +417,8 @@ entry(
         Ea=(53500, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 14""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 14""",
 )
 
 entry(
@@ -393,7 +438,8 @@ entry(
             Ea=(-1409, 'cal/mol'),
             T0=(1, 'K'))]),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 16""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 16""",
 )
 
 entry(
@@ -406,7 +452,8 @@ entry(
                                 Ea=(-1950, 'cal/mol'),
                                 T0=(1, 'K'))),
    shortDesc = u"""[Konnov2015]""",
-   longDesc = u"""Table 2, Reaction X6 It is pressure dependent, we need to fix it to ThirdBody""",
+   longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X6""",
 )
 
 entry(
@@ -419,7 +466,8 @@ entry(
         Ea=(4300, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 17""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 17""",
 )
 
 entry(
@@ -432,7 +480,8 @@ entry(
         Ea=(2620, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 18""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 18""",
 )
 
 entry(
@@ -445,7 +494,8 @@ entry(
         Ea=(3970, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 19""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 19""",
 )
 
 entry(
@@ -464,7 +514,8 @@ entry(
             Ea=(7269, 'cal/mol'),
             T0=(1, 'K'))]),
    shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 20""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 20""",
 )
 
 entry(
@@ -492,7 +543,8 @@ entry(
         Ea=(4094, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 22a""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 22a""",
 )
 
 entry(
@@ -505,7 +557,8 @@ entry(
         Ea=(934, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 36""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 36""",
 )
 
 entry(
@@ -518,7 +571,8 @@ entry(
         Ea=(1870, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 37""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 37""",
 )
 entry(
     index = 37,
@@ -530,7 +584,8 @@ entry(
         Ea=(-1377, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 38""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 38""",
 )
 
 entry(
@@ -549,7 +604,8 @@ entry(
             Ea=(0, 'cal/mol'),
             T0=(1, 'K'))]),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 1, Reaction 21a""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 1, Reaction 21a""",
 )
 
 entry(
@@ -561,7 +617,8 @@ entry(
         Ea=(69155, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 2, Reaction X1""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X1""",
 )
 
 entry(
@@ -573,7 +630,8 @@ entry(
         Ea=(69545, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 2, Reaction X2""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X2""",
 )
 
 entry(
@@ -585,7 +643,8 @@ entry(
         Ea=(25830, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 2, Reaction X3""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X3""",
 )
 
 entry(
@@ -597,19 +656,22 @@ entry(
         Ea=(0, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 2, Reaction X4, Data was not given """,
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X4, Data was not given """,
 )
 
 entry(
    index = 43,
-   label = "O + OH (+M) <=> HO2 (+M)",
-   kinetics = Arrhenius(
-       A=(1e+15, 'cm^3/(mol*s)'),
-       n=0,
-       Ea=(0, 'cal/mol'),
-       T0=(1, 'K')),
+   label = "O + OH <=> HO2",
+   kinetics = ThirdBody(
+        arrheniusLow=Arrhenius(
+            A=(1e+15, 'cm^6/(mol^2*s)'),
+            n=0,
+            Ea=(0, 'cal/mol'),
+            T0=(1, 'K'))),
    shortDesc = u"""[Konnov2015]""",
-   longDesc = u"""Table 2, Reaction X13""",
+   longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X13""",
 )
 
 entry(
@@ -621,7 +683,8 @@ entry(
        Ea=(0, 'cal/mol'),
        T0=(1, 'K')),
    shortDesc = u"""[Konnov2015]""",
-   longDesc = u"""Table 2, Reaction X15. Data wasn't available from konnov 2015""",
+   longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X15. Data wasn't available from konnov 2015""",
 )
 
 entry(
@@ -633,7 +696,8 @@ entry(
         Ea=(20000, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 2, Reaction X18""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X18""",
 )
 
 entry(
@@ -645,6 +709,7 @@ entry(
         Ea=(71700, 'cal/mol'),
         T0=(1, 'K')),
     shortDesc = u"""[Konnov2015]""",
-    longDesc = u"""Table 2, Reaction X22""",
+    longDesc = u"""Konnov (2015) https://doi.org/10.1016/j.combustflame.2015.07.014 
+    			Table 2, Reaction X22""",
 )
 
