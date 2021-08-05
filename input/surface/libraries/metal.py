@@ -67,8 +67,6 @@ entry(
     shortDesc = """fcc""",
     longDesc =
 """
-Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
-
 From
 2016 Hoffman et al.
 https://doi.org/10.1021/acs.jpcc.6b03375
@@ -90,8 +88,6 @@ entry(
     shortDesc = """fcc""",
     longDesc =
 """
-Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
-
 From
 2016 Hoffman et al.
 https://doi.org/10.1021/acs.jpcc.6b03375
@@ -139,8 +135,6 @@ entry(
     shortDesc = """fcc""",
     longDesc =
 """
-Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
-
 From
 2016 Hoffman et al.
 https://doi.org/10.1021/acs.jpcc.6b03375
@@ -162,8 +156,6 @@ entry(
     shortDesc = """fcc""",
     longDesc =
 """
-Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
-
 From
 2016 Hoffman et al.
 https://doi.org/10.1021/acs.jpcc.6b03375
@@ -185,8 +177,6 @@ entry(
     shortDesc = """fcc""",
     longDesc =
 """
-Calculated by Katrin Blondal and Bjarne Kreitz at Brown University
-
 From
 2016 Hoffman et al.
 https://doi.org/10.1021/acs.jpcc.6b03375
